@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Outer Body of calculator */
+body{
+    min-height: 100vh;
+    background: #dd0067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body of calculator */
+.calculator{
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background: rgb(21, 57, 218);
+    overflow: hidden;
+}
+
+/* Digit Input field */
+form input{
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    background: black;
+    text-align: right;
+    pointer-events: none;
+
+}
+
+/* Number Buttons */
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+/*Coloring the Maths Operator */
+.btn-yellow{
+    background: rgb(245, 146, 62);
+    color: #fff;
+    border-color: black;
+}
+
+/*Coloring the Maths Number */
+
+.btn-grey{
+    background: #f7efef;
+}
+
+/*Coloring the Equal Operator */
+.btn-equal{
+    background: green;
+    color: bisque;
+    border-color: black;
+}
+
+/*Coloring the Clear Operator */
+.btn-clear{
+    background: red;
+    color: bisque;
+    border-color: black;
+}
+
